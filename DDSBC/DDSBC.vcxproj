@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{d38f94a1-ef88-4d4a-be1a-1a52abf6cfb3}</ProjectGuid>
+    <RootNamespace>DDSBC</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\chenj\Desktop\BC31\DISK_C\INCLUDE;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\DISK_C\SOURCE\admin.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\all.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\call.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\cang.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\getmed.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\global.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\hz.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\login.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\main.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\map.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\menu.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\menuctrl.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\MOUSE.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\patient.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\prescription.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\put.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\quhao.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\shuru.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\storage.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\tan.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\user.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\welcome.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\xinxi.cpp" />
+    <ClCompile Include="..\..\DISK_C\SOURCE\zhuce.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\DISK_C\INCLUDE\admin.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\all.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\call.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\cang.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\define.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\getmed.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\hz.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\IMAGE.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\login.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\map.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\menu.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\menuctrl.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\mouse.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\patient.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\pre.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\put.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\quhao.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\shuru.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\storage.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\tan.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\user.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\welcome.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\xinxi.h" />
+    <ClInclude Include="..\..\DISK_C\INCLUDE\zhuce.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
